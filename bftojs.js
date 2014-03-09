@@ -5,7 +5,7 @@
 function translate(bf) {
     var js = "var c = new Array(30000);var i = 0;for(a = 0; a<29999; a++){c[a] = 0;}var output = \"\";";
 
-    for(i = 0; i<bf.length-1; i++){
+    for(i = 0; i<bf.length; i++){
         js += getJsByBf(bf.charAt(i));
     }
 
